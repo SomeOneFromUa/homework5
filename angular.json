@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "homework5"
+    }
+  },
+  "defaultProject": "homework5",
+  "cli": {
+    "analytics": "70c4b6ec-c86e-4803-9fcf-4e36ed7702f8"
+  }
 }

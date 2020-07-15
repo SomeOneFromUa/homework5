@@ -1,0 +1,12 @@
+<div class="selectStyle">
+  <h4>Select post:</h4>
+  <form #myForm='ngForm' (ngSubmit)="getPost()">
+    <select name="id" [(ngModel)]="postId">
+      <option *ngFor="let id of arr" [value]="id">post {{id}}</option>
+    </select>
+    <button>get post</button>
+  </form>
+</div>
+<div>
+<router-outlet></router-outlet>
+</div>

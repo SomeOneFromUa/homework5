@@ -1,0 +1,12 @@
+<div class="selectStyle">
+  <h4>Select user:</h4>
+  <form #usersForm (ngSubmit)="getUser()">
+    <select name="id" [(ngModel)]="userId">
+      <option *ngFor="let id of arr" [value]="id">user {{id}}</option>
+    </select>
+    <button>get user</button>
+  </form>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
